@@ -1,0 +1,102 @@
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Advertisement
+   -------------------------------------- */
+.img-row {
+   margin-top: 60px;
+  max-height: 300px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  }
+
+#ad {
+   width: 1170px;
+}
+
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#searchInput {
+   width: 300px;
+}
+
+/* --------------------------------------
+    Secondary Navbar
+   -------------------------------------- */
+.sec-nav-menu>li {
+      padding-right: 22px;
+   }
+.sec-toggle-button{
+   margin-left: 50px;
+   margin-bottom: 50px;
+
+}
+   
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#my-carousel .item {height: 400px}
+
+#my-carousel {
+   margin-top: 60px;
+   margin-bottom: 10px;
+}
+
+#slide1 {
+   background: url('../../images/iphone_7.jpg') no-repeat -120px 0px;
+}
+
+#slide2 {
+   background: url('../../images/iPhone6.png') no-repeat -120px 0px;
+}
+
+#slide3 {
+   background: url('../../images/tank.jpg') no-repeat -120px 0px;
+  }
+
+
+  /* --------------------------------------
+   News section
+   -------------------------------------- */
+   .news-img {
+      width: 100%;
+   }
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}

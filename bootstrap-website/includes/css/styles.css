@@ -1,17 +1,5 @@
 
 /* --------------------------------------
-   Layout
-   -------------------------------------- */
-
-
-
-/* --------------------------------------
-   Typography
-   -------------------------------------- */
-
-
-
-/* --------------------------------------
    Advertisement
    -------------------------------------- */
 .img-row {
@@ -47,10 +35,12 @@
 }
    
 
+
+
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-#my-carousel .item {height: 400px}
+#my-carousel .item {height: 256px}
 
 #my-carousel {
    margin-top: 60px;
@@ -58,17 +48,16 @@
 }
 
 #slide1 {
-   background: url('../../images/iphone_7.jpg') no-repeat -120px 0px;
-}
-
-#slide2 {
-   background: url('../../images/iPhone6.png') no-repeat -120px 0px;
-}
-
-#slide3 {
-   background: url('../../images/tank.jpg') no-repeat -120px 0px;
+    background: url('../../images/tank_medium.jpg') no-repeat; 
   }
 
+  #slide2 {
+    background: url('../../images/iPhone6_medium.png') no-repeat;
+  }
+
+  #slide3 {
+    background: url('../../images/iphone_7_medium.jpg') no-repeat;
+  }
 
   /* --------------------------------------
    News section
@@ -76,11 +65,48 @@
    .news-img {
       width: 100%;
    }
+
 /* --------------------------------------
-   Global Styles
+   Tab
    -------------------------------------- */
+#bollywood>img ,#hollywood>img{
+    margin-bottom: 10px;
+   }
+#hollywood>img {
+  margin-bottom: 15px;
+}
 
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+footer {
+  background: #333;
+  color: #eee;
+  font-size: 12px;
+  padding: 20px;
+}
 
+.social-image {
+  height: 30px;
+  margin: 4px;
+}
+
+.social-image:hover {
+  opacity: 0.5;
+}
+
+#footer-row {
+  padding: 20px;
+}
+
+.unstyled {
+  list-style: none; 
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+}
 
 /* --------------------------------------
    Media Queries
@@ -88,15 +114,42 @@
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+  
 	
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-	
+	#my-carousel .item {height: 192px}
+  
+  #slide1 {
+    background: url('../../images/tank_small.jpg') no-repeat; 
+  }
+
+  #slide2 {
+    background: url('../../images/iPhone6_small.png') no-repeat;
+  }
+
+  #slide3 {
+    background: url('../../images/iphone_7_small.jpg') no-repeat;
+  }
 }
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
-	
+
+  #my-carousel .item {height: 400px}
+
+#slide1 {
+   background: url('../../images/tank.jpg') no-repeat -150px 0px;
+}
+
+#slide2 {
+   background: url('../../images/iPhone6.png') no-repeat -120px 0px;
+}
+
+#slide3 {
+   background: url('../../images/iphone_7.jpg') no-repeat -120px 0px;
+  }
 }

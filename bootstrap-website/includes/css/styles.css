@@ -1,4 +1,5 @@
 
+
 /* --------------------------------------
    Advertisement
    -------------------------------------- */
@@ -58,7 +59,11 @@
   #slide3 {
     background: url('../../images/iphone_7_medium.jpg') no-repeat;
   }
-
+ 
+ #slide1>div>p {
+  text-align: bottom;
+  font-size: 20px;
+}
   /* --------------------------------------
    News section
    -------------------------------------- */
@@ -95,6 +100,11 @@ footer {
   opacity: 0.5;
 }
 
+#footer-row>div>p {
+  font-size: 20px;
+}
+
+
 #footer-row {
   padding: 20px;
 }
@@ -114,13 +124,61 @@ footer {
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+    #my-carousel .item {height: 103px}
+
+
+   #slide1 {
+    background: url('../../images/tank_ultra_small.jpg') no-repeat; 
+  }
+
+  #slide2 {
+    background: url('../../images/iPhone6_ultra_small.png') no-repeat;
+  }
   
-	
+  #slide3 {
+    background: url('../../images/iphone_7_ultra_small.jpg') no-repeat;
+  }
+
+#slide1>div>p {
+  font-size: 10px;
+}
+
+
+footer {
+  background: #333;
+  color: #eee;
+  font-size: 5px;
+  padding: 0px;
+}
+
+.social-image {
+  height: 10px;
+
+}
+
+.social-image:hover {
+  opacity: 0.5;
+}
+
+#footer-row {
+  padding: 0px;
+}
+
+
+#footer-row>div>p {
+  font-size: 5px;
+}
+
+.unstyled {
+  list-style: none; 
+}
+
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-	#my-carousel .item {height: 192px}
+@media (max-width: 768px , min-width: 479px) {
+  #my-carousel .item {height: 192px}
+
   
   #slide1 {
     background: url('../../images/tank_small.jpg') no-repeat; 
@@ -133,11 +191,35 @@ footer {
   #slide3 {
     background: url('../../images/iphone_7_small.jpg') no-repeat;
   }
+
+  footer {
+
+  font-size: 10px;
+  padding: 0px;
+}
+
+.social-image {
+  height: 20px;
+
+}
+
+
+
+#footer-row {
+  padding: 0px;
+}
+
+
+.unstyled {
+  list-style: none; 
+}
+
 }
 
 
 /* Large desktop */
 @media (min-width: 1200px) {
+
 
   #my-carousel .item {height: 400px}
 
